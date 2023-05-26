@@ -84,7 +84,7 @@ def get_args_by_task_model(task, sub_task, model_tag):
             bs = 25
         elif task == 'summarize':
             # bs = 48 #Colab OOM 
-            bs = 8
+            bs = 16
         elif task == 'clone':
             if model_tag in ['codebert', 'roberta']:
                 bs = 16
