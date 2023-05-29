@@ -10,7 +10,7 @@ def get_cmd(task, sub_task, model_tag, gpu, data_num, bs, lr, source_length, tar
                   (task, sub_task, model_tag, gpu, data_num, bs, lr, source_length, target_length, patience, epoch,
                    warmup, model_dir, summary_dir, res_fn)
     else:
-        cmd_str = 'bash exp_with_args.sh %s %s %s %d %d %d %d %d %d %d %d %d %s %s %s %d %d %d' % \
+        cmd_str = 'bash exp_with_args.sh task: %s sub_task: %s model_tag: %s gpu:%d data_num:%d bs:%d lr:%d source_length:%d target_length: %d patience: %d epoch: %d warmup: %d model_dir: %s summary_dir: %s res_fn: %s max_steps: %d save_steps: %d log_steps: %d' % \
                   (task, sub_task, model_tag, gpu, data_num, bs, lr, source_length, target_length, patience, epoch,
                    warmup, model_dir, summary_dir, res_fn, max_steps, save_steps, log_steps)
     return cmd_str
