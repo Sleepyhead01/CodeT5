@@ -13,7 +13,7 @@ def get_cmd(task, sub_task, model_tag, gpu, data_num, bs, lr, source_length, tar
                   (task, sub_task, model_tag, gpu, data_num, bs, lr, source_length, target_length, patience, epoch,
                    warmup, model_dir, summary_dir, res_fn)
     else:
-                print_str = 'bash exp_with_args.sh \ntask: %s \nsub_task: %s \nmodel_tag: %s \ngpu:%d \ndata_num:%d \nbs:%d \nlr:%d \nsource_length:%d \ntarget_length: %d \npatience: %d \nepoch: %d \nwarmup: %d \nmodel_dir: %s \nsummary_dir: %s \nres_fn: %s \nmax_steps: %d \nsave_steps: %d \nlog_steps: %d' % \
+        print_str = 'bash exp_with_args.sh \ntask: %s \nsub_task: %s \nmodel_tag: %s \ngpu:%d \ndata_num:%d \nbs:%d \nlr:%d \nsource_length:%d \ntarget_length: %d \npatience: %d \nepoch: %d \nwarmup: %d \nmodel_dir: %s \nsummary_dir: %s \nres_fn: %s \nmax_steps: %d \nsave_steps: %d \nlog_steps: %d' % \
                   (task, sub_task, model_tag, gpu, data_num, bs, lr, source_length, target_length, patience, epoch,
                    warmup, model_dir, summary_dir, res_fn, max_steps, save_steps, log_steps)
         cmd_str = 'bash exp_with_args.sh %s %s %s %d %d %d %d %d %d %d %d %d %s %s %s %d %d %d' % \
