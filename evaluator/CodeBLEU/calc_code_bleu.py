@@ -70,7 +70,7 @@ if __name__ == '__main__':
     parser.add_argument('--hyp', type=str, required=True,
                         help='hypothesis file')
     parser.add_argument('--lang', type=str, required=True,
-                        choices=['java', 'js', 'c_sharp', 'php', 'go', 'python', 'ruby'],
+                        choices=['java', 'js', 'c_sharp', 'php', 'go', 'python', 'ruby', 'r'],
                         help='programming language')
     parser.add_argument('--params', type=str, default='0.25,0.25,0.25,0.25',
                         help='alpha, beta and gamma')

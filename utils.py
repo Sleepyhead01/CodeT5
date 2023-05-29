@@ -111,7 +111,7 @@ def load_and_cache_multi_gen_data(args, pool, tokenizer, split_tag, only_src=Fal
         task_list = ['summarize', 'translate', 'refine', 'concode', 'defect']
         for task in task_list:
             if task == 'summarize':
-                sub_tasks = ['ruby', 'javascript', 'go', 'python', 'java', 'php']
+                sub_tasks = ['ruby', 'javascript', 'go', 'python', 'java', 'php', 'r']
             elif task == 'translate':
                 sub_tasks = ['java-cs', 'cs-java']
             elif task == 'refine':
