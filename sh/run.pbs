@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#PBS -l walltime=30:00:00,select=1:ncpus=8:mem=48gb:ngpus=2:gpu_mem=32gb
+#PBS -N millon_R_new
+#PBS -A st-fhendija-1-gpu
+#PBS -o output.txt
+#PBS -e error.txt
+
+##############################
+cd $PBS_O_WORKDIR
+
+source ~/.bashrc
+conda activate Old_R
+
+python run_exp.py --model_tag codet5_base --task summarize --sub_task r 
